@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gexiiiii.gfood.widget.TitleBar
+            android:id="@+id/mainTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:background="@color/colorPrimary"
+            app:imgLeft="@mipmap/ic_menu_white"
+            app:imgRight="@mipmap/ic_search_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textCenter="@string/app_name"
+            app:textTitleColor="@color/colorWhite" />
+
+        <com.gexiiiii.gfood.widget.NoScrollViewPager
+            android:id="@+id/mainViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/vLine"
+            app:layout_constraintTop_toBottomOf="@+id/mainTitleBar" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayBg"
+            app:layout_constraintBottom_toTopOf="@+id/mainTabLayout" />
+
+        <com.gexiiiii.gfood.widget.GTabLayout
+            android:id="@+id/mainTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/flMainDrawer"
+        android:layout_width="@dimen/width_main_drawer"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clickable="true"
+        android:focusable="true" />
+</androidx.drawerlayout.widget.DrawerLayout>

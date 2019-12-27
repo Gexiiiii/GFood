@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_main_drawer"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayBg"
+    tools:context=".ui.fragment.OtherFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clOtherTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_drawer_head"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/weather_level"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/ivWeather"
+            app:layout_constraintLeft_toRightOf="@+id/ivWeather"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivWeather">
+
+            <TextView
+                android:id="@+id/tvCityAndTime"
+                style="@style/WhiteText.12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvWeather"
+                style="@style/WhiteText.Blod_16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="无数据" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.gexiiiii.gfood.widget.ItemView
+        android:id="@+id/ivNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:icon_left="@mipmap/ic_news"
+        app:icon_right="@mipmap/ic_enter"
+        app:isShowUnderLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/clOtherTop"
+        app:title="新闻" />
+
+    <com.gexiiiii.gfood.widget.ItemView
+        android:id="@+id/ivTodayOnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:icon_left="@mipmap/ic_todayonhistory"
+        app:icon_right="@mipmap/ic_enter"
+        app:layout_constraintTop_toBottomOf="@+id/ivNews"
+        app:title="历史上的今天" />
+
+    <com.gexiiiii.gfood.widget.ItemView
+        android:id="@+id/ivAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:icon_left="@mipmap/ic_about"
+        app:icon_right="@mipmap/ic_enter"
+        app:layout_constraintTop_toBottomOf="@+id/ivTodayOnHistory"
+        app:title="关于" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        style="@style/GrayText.12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

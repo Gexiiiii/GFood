@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_35dp">35dp</dimen>
+    <dimen name="height_48dp">48dp</dimen>
+
+    <dimen name="height_edittext">40dp</dimen>
+    <dimen name="height_drawer_head">120dp</dimen>
+    <dimen name="height_item_menu">200dp</dimen>
+
+    <dimen name="width_main_drawer">300dp</dimen>
+
+    <dimen name="dimen_image">80dp</dimen>
+    <!--dimen-->
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+    <!--字号-->
+    <dimen name="font_size_12sp">12sp</dimen>
+    <dimen name="font_size_14sp">14sp</dimen>
+    <dimen name="font_size_15sp">15sp</dimen>
+    <dimen name="font_size_16sp">16sp</dimen>
+    <dimen name="font_size_17sp">17sp</dimen>
+    <dimen name="font_size_18sp">18sp</dimen>
+</resources>

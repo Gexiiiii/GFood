@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">好菜</string>
+    <string name="hello_blank_fragment">这是一个Fragment</string>
+
+    <string name="bottom_home">首页</string>
+    <string name="bottom_category">分类</string>
+    <string name="bottom_favorite">收藏</string>
+
+    <string name="title_tab_menu">菜谱</string>
+    <string name="title_tab_news">新闻</string>
+</resources>

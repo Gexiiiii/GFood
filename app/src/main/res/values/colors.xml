@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#79BD9A</color>
+    <color name="colorPrimaryDark">#61977B</color>
+    <color name="colorAccent">#79BD9A</color>
+
+    <color name="colorGrayBg">#EEEEEE</color>
+
+    <!--黑到白-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray90">#1A1A1A</color>
+    <color name="colorGray80">#343434</color>
+    <color name="colorGray70">#4E4E4E</color>
+    <color name="colorGray60">#676767</color>
+    <color name="colorGray">#808080</color>
+    <color name="colorGray40">#989898</color>
+    <color name="colorGray30">#B1B1B1</color>
+    <color name="colorGray20">#CBCBCB</color>
+    <color name="colorGray10">#E5E5E5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <!--透明-->
+    <color name="colorTranspa">#00000000</color>
+    <!--黑透明-->
+    <color name="colorBlackTranspa70">#B1000000</color>
+    <color name="colorBlackTranspa60">#98000000</color>
+    <color name="colorBlackTranspa50">#80000000</color>
+    <color name="colorBlackTranspa40">#67000000</color>
+    <color name="colorBlackTranspa30">#4E000000</color>
+    <color name="colorBlackTranspa20">#34000000</color>
+    <color name="colorBlackTranspa10">#1A000000</color>
+    <!--白透明-->
+    <color name="colorWhiteTranspa70">#B1FFFFFF</color>
+    <color name="colorWhiteTranspa60">#98FFFFFF</color>
+    <color name="colorWhiteTranspa50">#80FFFFFF</color>
+    <color name="colorWhiteTranspa40">#67FFFFFF</color>
+    <color name="colorWhiteTranspa30">#4EFFFFFF</color>
+    <color name="colorWhiteTranspa20">#34FFFFFF</color>
+    <color name="colorWhiteTranspa10">#1AFFFFFF</color>
+</resources>
