@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 用于申请调用A-GPS模块 -->
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
+    <!--API28及以上拒绝明文网络请求，需要设置 usesCleartextTraffic="true" -->
     <application
         android:name=".GApplication"
         android:allowBackup="true"
@@ -21,11 +22,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.activity.MenuInfoActivity"></activity>
+        <activity android:name=".ui.activity.MenuInfoActivity"/>
         <activity android:name=".ui.activity.MenuListActivity" />
         <activity
             android:name=".ui.activity.StartActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/StartAppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +37,7 @@
         <activity
             android:name=".ui.activity.MainActivity"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateHidden|adjustPan" />
 
         <meta-data
